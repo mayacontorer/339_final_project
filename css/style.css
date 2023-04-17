@@ -1,6 +1,10 @@
+.center{
+    margin: auto;
+    width: 50%;
+}
 .skip{
     position: absolute;
-    top: -40px;
+    top: -50px;
 }
 
 .skip:focus{
@@ -9,50 +13,49 @@
 }
 
 .menu{
-    display: hidden;
+    display: none;
 }
 
 .main_page{
-    background-image: url("../images/background.jpg");
+    background-image: url("../images/background.svg");
 }
 
-.mov1{
-    background-color: yellow;
-}
-.nav_links a:active{
-    border: solid black 5px;
-}
-.mov2{
-    background-color: darkturquoise;
+.mov1, .mov2{
+    background-color: blue;
 }
 
 .nav_links{
     display: flex;
     flex-direction: column;
+    row-gap: 20px;
     justify-content: center;
     align-items: center;
     list-style-type: none;
 }
 
-.active{
-    font-size: 200%;
-    text-decoration: underline;
-}
-
 a {
     padding: 10px;
+    background-color: white;
+    border: dotted black 2px;
 }
 
+.active{
+    font-size: 200%;
+}
+
+main{
+    border: solid black 2px;
+    width: 80%;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: white;
+}
 
 .gallery{
     display: grid;
     justify-content: center;
     align-items: center;
     grid-template-columns: auto auto;
-}
-
-img {
-    width: 100%;
 }
 
 .movie_info{
@@ -89,33 +92,24 @@ img {
         justify-content: left;
         grid-template-columns: auto auto auto;
     }
+    
 
     .nav_links{
+        font-size: 80%;
         display: flex;
         flex-direction: row;
-
+        justify-content: flex-start;
     }
     .menu{
         font-size: 150%;
+        display: inline;
+        border: dotted black 2px;
+        background-color: white;
     }
-    .mov1{
-        background-color: purple;
-        color: white;
-    }
-
-    .mov1 a{
-        color: white;
+    .mov1, .mov2{
+        background-color: yellow;
     }
 
-    
-    .mov2{
-        background-color: green;
-        color: white;
-    }
-
-    .mov2 a{
-        color: white;
-    }
     .active{
         font-size: 300%;
         border: solid black 3px;
@@ -132,6 +126,17 @@ img {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
+    }
+
+    .center{
+        width: 80%;
+    }
+    .movie_info{
+        flex-direction: row;
+        align-items: center;
+    }
+    .mov1, .mov2{
+        background-color: orangered;
     }
     .menu{
         font-size: 175%;
@@ -191,11 +196,7 @@ img {
     #image_i{
         grid-column: 2/3;
     }
-    .movie_info{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
+    
 
     
     
